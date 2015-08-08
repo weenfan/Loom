@@ -1580,7 +1580,7 @@ EOM
 
 sub page_login
 	{
-	page::set_title("Login");
+	page::set_title("Kranzworth Media Loom Server");
 	put_mask_if_absent();
 
 	if (http::get("help"))
@@ -1862,6 +1862,10 @@ EOM
 	page::top_link(page::highlight_link(
 		"/help",
 		"Help", 0, "Frequently Asked Questions"));
+
+	page::top_link(page::highlight_link(
+		"/ssl.crt",
+		"SSL", 0, "SSL Cert"));
 
 	page::top_link(page::highlight_link(
 		html::top_url("help",1, "topic","contact_info"),

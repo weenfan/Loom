@@ -23,7 +23,7 @@ sub init
 
 	# Default host_ip is localhost.  The value "*" means listen on any IP
 	# (INADDR_ANY)
-	context::default($g_config,"host_ip","127.0.0.1");
+	context::default($g_config,"host_ip","23.80.94.149");
 
 	# Default port is 8286.
 	context::default($g_config,"host_port","8286");

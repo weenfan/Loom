@@ -1,6 +1,6 @@
 package sha256;
 use strict;
-use Digest::SHA256;
+use Digest::SHA;
 
 =pod
 
@@ -29,7 +29,7 @@ sub process_chunks
 
 	die if $num_chunks * $chunk_size + $remainder != $len;
 
-	my $context = Digest::SHA256::new(256);
+	my $context = Digest::SHA->new(256);
 
 	my $pos = 0;
 

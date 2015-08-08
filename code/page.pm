@@ -427,8 +427,10 @@ $base_clause<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Content-Language" content="en-us">
 <meta name="description" content="$system_name">
 <meta name="keywords" content="CMS content-management gold payment freedom">
+<link rel="shortcut icon" href="/cache/7200/png/favicon.ico" />
 <title>$title</title>
 <link rel="stylesheet" href="/cache/7200/data/style.css" type="text/css">
+<link rel="stylesheet" href="//kranzworthmedia.com/loom.css" type="text/css">
 $keyboard_script
 </head>
 <body style='max-width:700px'$onload_clause>

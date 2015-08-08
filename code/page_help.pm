@@ -72,7 +72,7 @@ sub help_index
 		page::top_link($link_archive_api);
 		page::top_link($link_cms);
 		page::top_link($link_tools);
-		page::top_link($link_source);
+#		page::top_link($link_source);
 		}
 
 	if ($topic eq "contact_info")

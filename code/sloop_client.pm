@@ -471,6 +471,26 @@ sub loom_dispatch
 		my $id = shift @path;
 		interpret_archive_slot($id);
 		}
+	elsif ($name eq "jpg")
+		{
+		my @path = http::split_path($path);
+		shift @path;
+		my $file = shift @path;
+		my $result = file::get_by_name(sloop_top::dir(),"data/".$file);
+		my $response_code = "200 OK";
+		my $headers = "Content-Type: image/jpg\n";
+		page::format_HTTP_response($response_code,$headers,$result);
+		}
+	elsif ($name eq "png")
+		{
+		my @path = http::split_path($path);
+		shift @path;
+		my $file = shift @path;
+		my $result = file::get_by_name(sloop_top::dir(),"data/".$file);
+		my $response_code = "200 OK";
+		my $headers = "Content-Type: image/png\n";
+		page::format_HTTP_response($response_code,$headers,$result);
+		}
 	else
 		{
 		my $id = loom_config::get("link/$name");
